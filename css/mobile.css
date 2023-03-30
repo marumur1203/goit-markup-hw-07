@@ -1,0 +1,13 @@
+@media screen and (min-width: 480px), (max-width: 768px) {
+  .container-sm {
+    max-width: 294px;
+  }
+  .team {
+    padding-top: 96px;
+    padding-bottom: 128px;
+  }
+
+  .team-item:not(:last-child) {
+    margin-bottom: 72px;
+  }
+}

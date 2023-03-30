@@ -1,0 +1,12 @@
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1158px;
+  }
+  .team-list {
+    display: flex;
+    gap: 24px;
+  }
+  .team-item {
+    width: calc((100% - 72px) / 4);
+  }
+}
