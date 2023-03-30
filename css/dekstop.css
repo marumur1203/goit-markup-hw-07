@@ -1,12 +1,43 @@
 @media screen and (min-width: 1200px) {
-  .container {
+  .header .logo-link {
+    margin-right: 76px;
+  }
+  .mail {
+    margin-right: 40px;
+  }
+  .team .container {
     max-width: 1158px;
   }
   .team-list {
-    display: flex;
     gap: 24px;
   }
   .team-item {
     width: calc((100% - 72px) / 4);
+  }
+  .customers .container-sm {
+    max-width: 1158px;
+  }
+
+  /*--------- features */
+
+  .features .container-sm {
+    max-width: 1158px;
+  }
+  .work .container {
+    max-width: 1158px;
+  }
+
+  /* footer */
+  .footer .container-sm {
+    max-width: 1158px;
+  }
+  .footer-info {
+    margin-right: 120px;
+  }
+  .footer-social-media {
+    margin-right: 80px;
+  }
+  .footer-subscribe-form {
+    gap: 24px;
   }
 }
