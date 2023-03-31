@@ -2,8 +2,54 @@
   .header .logo-link {
     margin-right: 76px;
   }
+  .header-link {
+    color: var(--title-text-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;}
+    
   .mail {
     margin-right: 40px;
+  }
+
+  /* ----------Section hero---------- */
+  .hero {
+    padding-top: 164px;
+    padding-bottom: 188px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url(../images/people-office.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  @media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(
+        rgba(46, 47, 66, 0.7),
+        rgba(46, 47, 66, 0.7)
+      ),
+      url('../images/people-office-bg-deks2x.jpg');
+  }
+
+  .hero-title {
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    max-width: 496px;
+    margin-bottom: 48px;
+    text-align: center;
+  }
+
+  /* -------Section Team--------- */
+  .team {
+    padding: 120px 0;
   }
   .team .container {
     max-width: 1158px;
@@ -14,22 +60,90 @@
   .team-item {
     width: calc((100% - 72px) / 4);
   }
+  /* ---------Section Customers--------- */
+  .customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
   .customers .container-sm {
     max-width: 1158px;
   }
+  .customers-logo-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-content: center;
+  }
+  .customers-logo-item {
+    width: calc((100% - 144px) / 6);
+  }
 
   /*--------- features */
-
+  .features {
+    padding-top: 120px;
+    padding-bottom: 60px;
+  }
+  .features-list {
+    display: flex;
+    flex-direction: row;
+    gap: 24px;
+  }
+  .features-item {
+    width: calc((100% - 72px) / 4);
+  }
   .features .container-sm {
     max-width: 1158px;
+  }
+  .features-rect {
+    background-color: #f4f4fd;
+    border-radius: 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 264px;
+    height: 112px;
+    margin-bottom: var(--secondary-margin);
+  }
+  .features-subtitle {
+    font-weight: 500;
+    color: var(--title-text-color);
+    font-size: 20px;
+    line-height: 1.2;
+    margin-bottom: var(--secondary-margin);
+  }
+  /*------------ Section Work --------------*/
+  .work {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+  .work-title {
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+  .work-list {
+    display: flex;
+    gap: 24px;
   }
   .work .container {
     max-width: 1158px;
   }
 
-  /* footer */
+  /* ----------------footer----------- */
   .footer .container-sm {
     max-width: 1158px;
+  }
+  .footer {
+    padding: 100px 0;
+  }
+  .footer-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .footer .logo-link {
+    text-align: start;
   }
   .footer-info {
     margin-right: 120px;
@@ -37,7 +151,18 @@
   .footer-social-media {
     margin-right: 80px;
   }
+  .footer-title {
+    text-align: start;
+  }
   .footer-subscribe-form {
     gap: 24px;
+  }
+  .subscribe-input {
+    width: 264px;
+  }
+  .footer-subscribe-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

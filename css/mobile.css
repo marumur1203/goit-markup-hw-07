@@ -2,88 +2,13 @@
   .team .container-sm {
     max-width: 294px;
   }
-  .team {
-    padding-top: 96px;
-    padding-bottom: 128px;
-  }
-  .team-list {
-    gap: 72px;
-  }
-  .customers {
-    padding: 96px 0;
-  }
   .customers .container-sm {
     max-width: 396px;
-  }
-  .customers-logo-list {
-    flex-wrap: wrap;
-    row-gap: 72px;
-    column-gap: 16px;
-  }
-  .customers-logo-item {
-    width: calc((100% - 16px) / 2);
-  }
-
-  /* -------section Features-------- */
-  .features {
-    padding: 96px 0;
   }
   .features .container-sm {
     max-width: 426px;
   }
-  .features-list {
-    display: flex;
-    flex-direction: column;
-    row-gap: 72px;
-  }
-  .features-item {
-    width: 100%;
-  }
-  .features-rect {
-    display: none;
-  }
-  .features-subtitle {
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-  }
-  .features-text {
-    font-weight: 500;
-  }
-  /* -------/section Features */
-  .work {
-    display: none;
-  }
-
-  /* Footer */
-  .footer {
-    padding: 96px 0;
-  }
   .footer .container-sm {
     max-width: 428px;
-  }
-  .footer-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 72px;
-  }
-
-  .footer .logo-link {
-    text-align: center;
-  }
-
-  .footer-title {
-    text-align: center;
-  }
-
-  .subscribe-input {
-    width: 398px;
-  }
-  .footer-subscribe-form {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    row-gap: 16px;
   }
 }
