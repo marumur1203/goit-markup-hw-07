@@ -26,20 +26,20 @@
   </head>
   <body>
     <!-------------Header----------- -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container container-sm">
         <div class="header-content">
           <a href="./index.html" class="logo-link link">
             <span class="logo">Web</span>Studio</a
           >
-          <button type="button" class="header-btn-mobile">
+          <button type="button" class="header-btn-mobile button js-open-menu">
             <svg class="" width="32" height="22">
               <use href="./images/symbol-defs.svg#icon-menu">\</use>
             </svg>
           </button>
-          <div class="header-nav-wrap">
-            <button type="button" data-modal-close class="modal-close button">
-              <svg class="modal-close-icon" width="8px" height="8px">
+          <div class="mobile-menu js-menu-container">
+            <button type="button"  class="mobile-close button js-close-menu">
+              <svg class="mobile-close-icon" width="8px" height="8px">
                 <use href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
             </button>
@@ -56,6 +56,7 @@
             </li>
           </ul>
         </nav>
+        <div class="header-contacts-wrap">
         <address class="contacts">
           <ul class="contacts-list list">
             <li class="contacts-item">
@@ -72,10 +73,69 @@
             </li>
           </ul>
         </address>
+        <div class="header-social-media">
+          <ul class="team-social-list list">
+            <li class="team-social-item">
+              <a
+                href=""
+                class="team-social-link link"
+                target="_blank"
+                rel="noopener norefferrer nofollow"
+              >
+                <svg class="team-social-icon" width="16" height="16">
+                  <use
+                    href="./images/symbol-defs.svg#icon-instagram"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-social-item">
+              <a
+                href=""
+                class="team-social-link link"
+                target="_blank"
+                rel="noopener norefferrer nofollow"
+              >
+                <svg class="team-social-icon" width="16" height="16">
+                  <use href="./images/symbol-defs.svg#icon-twitter"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-social-item">
+              <a
+                href=""
+                class="team-social-link link"
+                target="_blank"
+                rel="noopener norefferrer nofollow"
+              >
+                <svg class="team-social-icon" width="16" height="16">
+                  <use
+                    href="./images/symbol-defs.svg#icon-facebook"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+            <li class="team-social-item">
+              <a
+                href=""
+                class="team-social-link link"
+                target="_blank"
+                rel="noopener norefferrer nofollow"
+              >
+                <svg class="team-social-icon" width="16" height="16">
+                  <use
+                    href="./images/symbol-defs.svg#icon-linkedin"
+                  ></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
       </div>
       </div>
     </div>
-    </header> -->
+    </header> 
     <!-- -------------/Header---------------------- -->
     <main>
       <!-- ---------------------Hero section-------------->
@@ -672,7 +732,7 @@
     </div>
     </footer> 
     <!-- /Footer -->
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button type="button" data-modal-close class="modal-close button">
           <svg class="modal-close-icon" width="8px" height="8px">
@@ -787,6 +847,7 @@
         </form>
       </div>
     </div>
-    <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script> 
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

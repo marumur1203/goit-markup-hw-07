@@ -1,4 +1,23 @@
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1200px) and (max-width: 1440px) {
+  .current {
+    color: rgba(64, 75, 191, 1);
+    position: relative;
+  }
+  .current::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    background: #404bbf;
+    border-radius: 2px;
+    bottom: -24px;
+    left: 0;
+    position: relative;
+  }
+  .header .container-sm {
+    min-width: 1200px;
+  }
   .header .logo-link {
     margin-right: 76px;
   }
@@ -6,8 +25,49 @@
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
-    line-height: 1.5;}
-    
+    line-height: 1.5;
+  }
+  .header-btn-mobile {
+    display: none;
+  }
+  .header-content {
+    display: flex;
+    padding: 24px 0;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
+  }
+
+  .header-link {
+    color: var(--title-text-color);
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .header-link:is(:hover, :focus) {
+    color: var(--active-color);
+  }
+
+  .contacts-link {
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .contacts-link:is(:hover, :focus) {
+    color: var(--active-color);
+  }
+
   .mail {
     margin-right: 40px;
   }
@@ -28,14 +88,15 @@
     background-position: center;
   }
   @media (min-device-pixel-ratio: 2),
-  (min-resolution: 192dpi),
-  (min-resolution: 2dppx) {
-  .hero {
-    background-image: linear-gradient(
-        rgba(46, 47, 66, 0.7),
-        rgba(46, 47, 66, 0.7)
-      ),
-      url('../images/people-office-bg-deks2x.jpg');
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    .hero {
+      background-image: linear-gradient(
+          rgba(46, 47, 66, 0.7),
+          rgba(46, 47, 66, 0.7)
+        ),
+        url('../images/people-office-bg-deks2x.jpg');
+    }
   }
 
   .hero-title {
@@ -46,39 +107,10 @@
     margin-bottom: 48px;
     text-align: center;
   }
-
-  /* -------Section Team--------- */
-  .team {
-    padding: 120px 0;
+  .hero .container {
+    min-width: 1200px;
   }
-  .team .container {
-    max-width: 1158px;
-  }
-  .team-list {
-    gap: 24px;
-  }
-  .team-item {
-    width: calc((100% - 72px) / 4);
-  }
-  /* ---------Section Customers--------- */
-  .customers {
-    padding-top: 130px;
-    padding-bottom: 120px;
-  }
-  .customers .container-sm {
-    max-width: 1158px;
-  }
-  .customers-logo-list {
-    display: flex;
-    gap: 24px;
-    justify-content: center;
-    align-content: center;
-  }
-  .customers-logo-item {
-    width: calc((100% - 144px) / 6);
-  }
-
-  /*--------- features */
+  /*---------Section Features------- */
   .features {
     padding-top: 120px;
     padding-bottom: 60px;
@@ -111,6 +143,20 @@
     line-height: 1.2;
     margin-bottom: var(--secondary-margin);
   }
+  /* -------Section Team--------- */
+  .team {
+    padding: 120px 0;
+  }
+  .team .container {
+    max-width: 1158px;
+  }
+  .team-list {
+    gap: 24px;
+  }
+  .team-item {
+    max-width: calc((100% - 72px) / 4);
+  }
+
   /*------------ Section Work --------------*/
   .work {
     display: block;
@@ -130,7 +176,23 @@
   .work .container {
     max-width: 1158px;
   }
-
+  /* ---------Section Customers--------- */
+  .customers {
+    padding-top: 130px;
+    padding-bottom: 120px;
+  }
+  .customers .container-sm {
+    max-width: 1158px;
+  }
+  .customers-logo-list {
+    display: flex;
+    gap: 24px;
+    justify-content: center;
+    align-content: center;
+  }
+  .customers-logo-item {
+    width: calc((100% - 144px) / 6);
+  }
   /* ----------------footer----------- */
   .footer .container-sm {
     max-width: 1158px;

@@ -1,10 +1,33 @@
 @media screen and (min-width: 480px) and (max-width: 767px) {
+  .header .container-sm {
+    max-width: 458px;
+  }
+  .mobile-menu {
+    background-color: #ffffff;
+    width: 100%;
+  }
+  /* .header-link:last-child {
+    color: #404bbf; 
+  }  */
+  .tel {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+  }
+  .header-social-media .team-social-list {
+    gap: 56px;
+    justify-content: space-between;
+  }
+  .hero .container {
+    max-width: 458px;
+  }
   .team .container-sm {
     max-width: 294px;
   }
   .customers .container-sm {
-    max-width: 396px;
+    max-width: 426px;
   }
+
   .features .container-sm {
     max-width: 426px;
   }
