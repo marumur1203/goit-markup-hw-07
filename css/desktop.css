@@ -1,4 +1,4 @@
-@media screen and (min-width: 1200px) and (max-width: 1440px) {
+@media screen and (min-width: 1200px) and (max-width: 1600px) {
   .current {
     color: rgba(64, 75, 191, 1);
     position: relative;
@@ -11,16 +11,25 @@
     height: 4px;
     background: #404bbf;
     border-radius: 2px;
-    bottom: -24px;
+    bottom: -28px;
     left: 0;
     position: relative;
   }
+  /* mobile menu not */
+  .mobile-menu {
+    display: none;
+  }
+  .header-btn-mobile {
+    display: none;
+  }
+  /* -----------HEADER-------- */
   .header .container-sm {
-    min-width: 1200px;
+    max-width: 1158px;
   }
   .header-content {
     display: flex;
-    padding: 24px 0;
+    padding-top: 24px;
+    padding-bottom: 28px;
   }
   .logo-link {
     margin-right: 76px;
@@ -28,27 +37,19 @@
   .header-btn-mobile {
     display: none;
   }
-  .mobile-menu {
-    display: block;
-    background-color: transparent;
-    max-width: unset;
-    height: unset;
-    position: static;
-  }
-  .mobile-close {
-    display: none;
-  }
-  .header-list {
+  .header-contacts-wrap {
     display: flex;
-
-    gap: 40px;
+    margin-left: auto;
+    gap: 332px;
   }
   .header-nav {
     display: flex;
-    align-items: center;
+  }
+  .header-list {
+    display: flex;
+    gap: 40px;
   }
   .header-link {
-    color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
@@ -62,8 +63,17 @@
   .contacts-list {
     display: flex;
   }
-  .contacts {
-    margin-left: auto;
+  .contacts-link {
+    color: var(--primary-text-color);
+    font-style: normal;
+    font-size: 16px;
+    line-height: 1.5;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .contacts-link:is(:hover, :focus) {
+    color: var(--active-color);
   }
   .mail {
     margin-right: 40px;
@@ -71,7 +81,7 @@
 
   /* ----------Section hero---------- */
   .hero {
-    padding-top: 164px;
+    padding-top: 188px;
     padding-bottom: 188px;
     margin-left: auto;
     margin-right: auto;
@@ -95,7 +105,9 @@
         url('../images/people-office-bg-deks2x.jpg');
     }
   }
-
+  .hero .container {
+    min-width: 1158px;
+  }
   .hero-title {
     font-weight: 700;
     font-size: 56px;
@@ -104,13 +116,22 @@
     margin-bottom: 48px;
     text-align: center;
   }
-  .hero .container {
-    min-width: 1200px;
+  .hero-button {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
+  .hero-button:is(:hover, :focus) {
+    background-color: var(--active-color);
+  }
+
   /*---------Section Features------- */
   .features {
     padding-top: 120px;
     padding-bottom: 60px;
+  }
+  .features .container-sm {
+    max-width: 1158px;
   }
   .features-list {
     display: flex;
@@ -119,9 +140,6 @@
   }
   .features-item {
     width: calc((100% - 72px) / 4);
-  }
-  .features .container-sm {
-    max-width: 1158px;
   }
   .features-rect {
     background-color: #f4f4fd;
@@ -140,6 +158,29 @@
     line-height: 1.2;
     margin-bottom: var(--secondary-margin);
   }
+  .features-text {
+    font-weight: 400;
+  }
+  /*------------ Section Work --------------*/
+  .work {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 120px;
+  }
+  .work .container {
+    max-width: 1158px;
+  }
+  .work-title {
+    font-size: 36px;
+    line-height: 1.1;
+    text-align: center;
+    margin-bottom: 72px;
+  }
+  .work-list {
+    display: flex;
+    gap: 24px;
+  }
+
   /* -------Section Team--------- */
   .team {
     padding: 120px 0;
@@ -153,29 +194,18 @@
   .team-item {
     max-width: calc((100% - 72px) / 4);
   }
+  .team-social-link {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .team-social-link:is(:hover, :focus) {
+    background-color: var(--active-color);
+  }
 
-  /*------------ Section Work --------------*/
-  .work {
-    display: block;
-    padding-top: 60px;
-    padding-bottom: 120px;
-  }
-  .work-title {
-    font-size: 36px;
-    line-height: 1.1;
-    text-align: center;
-    margin-bottom: 72px;
-  }
-  .work-list {
-    display: flex;
-    gap: 24px;
-  }
-  .work .container {
-    max-width: 1158px;
-  }
   /* ---------Section Customers--------- */
   .customers {
-    padding-top: 130px;
+    padding-top: 120px;
     padding-bottom: 120px;
   }
   .customers .container-sm {
@@ -190,22 +220,34 @@
   .customers-logo-item {
     width: calc((100% - 144px) / 6);
   }
+  .customers-logo-link {
+    transition-property: color, border-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .customers-logo-link:is(:hover, :focus) {
+    color: var(--active-color);
+    border-color: var(--active-color);
+  }
+
   /* ----------------footer----------- */
+  .footer {
+    padding-top: 100px;
+    padding-bottom: 130px;
+  }
   .footer .container-sm {
     max-width: 1158px;
-  }
-  .footer {
-    padding: 100px 0;
   }
   .footer-container {
     display: flex;
     flex-direction: row;
   }
-  .footer .logo-link {
-    text-align: start;
-  }
   .footer-info {
     margin-right: 120px;
+    min-width: 264px;
+  }
+  .footer .logo-link {
+    text-align: start;
   }
   .footer-social-media {
     margin-right: 80px;
@@ -213,15 +255,45 @@
   .footer-title {
     text-align: start;
   }
-  .footer-subscribe-form {
-    gap: 24px;
+  .footer-social-link {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-  .subscribe-input {
-    width: 264px;
+  .footer-social-link:is(:hover, :focus) {
+    background-color: #31d0aa;
   }
   .footer-subscribe-form {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
+    gap: 24px;
+  }
+  .subscribe-input {
+    min-width: 264px;
+    transition-property: border-color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .subscribe-input:is(:hover, :focus) {
+    border-color: #4d5ae5;
+  }
+  .subscribe-btn {
+    transition-property: background-color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .subscribe-btn:is(:hover, :focus) {
+    background-color: var(--active-color);
+    outline: transparent;
+  }
+  .subscribe-icon {
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  .modal {
+    max-width: 408px;
   }
 }

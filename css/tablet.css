@@ -15,54 +15,57 @@
     left: 0;
     position: relative;
   }
-  .header {
-  }
-  .header .container-sm {
-    max-width: 768px;
+  /* mobile menu not */
+  .mobile-menu {
+    display: none;
   }
   .header-btn-mobile {
     display: none;
   }
-  .header-list {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-  }
-  .header-nav {
-    display: flex;
-    align-items: center;
-  }
-  .header-social-media .team-social-list {
-    display: none;
-  }
+
+  /* HEADER */
   .header .container-sm {
     max-width: 768px;
   }
   .header-content {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 22px;
+  }
+  .header-contacts-wrap {
+    display: flex;
+    gap: 118px;
+  }
+  .header-nav {
+    display: flex;
     align-items: center;
   }
+  .header-list {
+    display: flex;
+    gap: 40px;
+  }
+  .header-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
   .contacts-list {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
   }
   .contacts-link {
+    color: var(--primary-text-color);
+    font-style: normal;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
     letter-spacing: 0.04em;
   }
-  .mobile-menu {
-    background-color: transparent;
-    max-width: unset;
-    height: unset;
-    position: static;
+  .contacts-link.mail {
+    margin-bottom: 6px;
   }
-  .mobile-close {
-    display: none;
-  }
-
   /* -------Section Hero-------- */
   .hero {
     padding-top: 112px;
@@ -171,10 +174,22 @@
       row-gap: 72px;
       column-gap: 24px;
     }
-
+    .footer .logo-link {
+      text-align: start;
+    }
+    .footer-title {
+      text-align: start;
+    }
     .footer-subscribe-form {
       display: flex;
+      flex-direction: row;
       gap: 24px;
+    }
+    .subscribe-input {
+      min-width: 264px;
+    }
+    .modal {
+      max-width: 408px;
     }
   }
 }

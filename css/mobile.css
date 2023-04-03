@@ -6,9 +6,10 @@
     background-color: #ffffff;
     width: 100%;
   }
-  /* .header-link:last-child {
-    color: #404bbf; 
-  }  */
+  .current {
+    color: rgba(64, 75, 191, 1);
+    position: relative;
+  }
   .tel {
     font-weight: 700;
     font-size: 36px;
@@ -33,5 +34,8 @@
   }
   .footer .container-sm {
     max-width: 428px;
+  }
+  .subscribe-input {
+    min-width: 398px;
   }
 }
