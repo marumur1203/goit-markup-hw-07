@@ -18,56 +18,53 @@
   .header .container-sm {
     min-width: 1200px;
   }
-  .header .logo-link {
+  .header-content {
+    display: flex;
+    padding: 24px 0;
+  }
+  .logo-link {
     margin-right: 76px;
+  }
+  .header-btn-mobile {
+    display: none;
+  }
+  .mobile-menu {
+    display: block;
+    background-color: transparent;
+    max-width: unset;
+    height: unset;
+    position: static;
+  }
+  .mobile-close {
+    display: none;
+  }
+  .header-list {
+    display: flex;
+
+    gap: 40px;
+  }
+  .header-nav {
+    display: flex;
+    align-items: center;
   }
   .header-link {
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.5;
-  }
-  .header-btn-mobile {
-    display: none;
-  }
-  .header-content {
-    display: flex;
-    padding: 24px 0;
-  }
-  .header-nav {
-    display: flex;
-    align-items: center;
-  }
-
-  .header-link {
-    color: var(--title-text-color);
-    font-weight: 700;
-    font-size: 36px;
-    line-height: 1.11;
-
     transition-property: color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   }
-
   .header-link:is(:hover, :focus) {
     color: var(--active-color);
   }
-
-  .contacts-link {
-    color: var(--primary-text-color);
-    font-style: normal;
-    font-size: 16px;
-    line-height: 1.5;
-    transition-property: color;
-    transition-duration: 250ms;
-    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  .contacts-list {
+    display: flex;
   }
-
-  .contacts-link:is(:hover, :focus) {
-    color: var(--active-color);
+  .contacts {
+    margin-left: auto;
   }
-
   .mail {
     margin-right: 40px;
   }

@@ -38,6 +38,11 @@
   .header .container-sm {
     max-width: 768px;
   }
+  .header-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
   .contacts-list {
     display: flex;
     flex-direction: row;
@@ -49,17 +54,15 @@
     letter-spacing: 0.04em;
   }
   .mobile-menu {
-    height: auto;
+    background-color: transparent;
+    max-width: unset;
+    height: unset;
     position: static;
-    display: flex;
-    flex-direction: row;
-    padding: 0;
-    transform: none;
-    transition: none;
   }
   .mobile-close {
     display: none;
   }
+
   /* -------Section Hero-------- */
   .hero {
     padding-top: 112px;
